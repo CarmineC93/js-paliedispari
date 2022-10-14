@@ -6,7 +6,7 @@ Creare una funzione per capire se la parola inserita è palindroma.*/
 const userWord = prompt("Dimmi una parola");
 
 
-statusWord = isPalindroma(userWord);
+statusWord = isPalindroma(userWord.toLowerCase());
 
 if(statusWord === true){
     console.log("la parola è palindroma")
@@ -52,8 +52,6 @@ function isPalindroma (word){
         letter++
     }
 
-
     return isWordPalindroma;
-
 }
 
