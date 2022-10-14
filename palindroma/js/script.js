@@ -40,11 +40,10 @@ function isPalindroma (word){
     altrimenti se i valori non sono uguali il cotrollo può fermarsi, le parole non sono uguali*/
   
     let letter = 0;
-    while(letter < word.length && fromRight === fromLeft){          
+    while(letter < word.length && fromRight === fromLeft){         
         if(letter === word.length-1){
-            isWord === true;
+            isWord = true;
         };
-
         letter++
     }
 
