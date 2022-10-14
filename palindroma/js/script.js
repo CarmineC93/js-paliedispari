@@ -5,9 +5,14 @@ Creare una funzione per capire se la parola inserita è palindroma.*/
 //chiediamo all'utente una parola e salviamola in una variabile
 const userWord = prompt("Dimmi una parola");
 
-isPalindroma(userWord);
 
-console.log(isWordPalindroma);
+statusWord = isPalindroma(userWord);
+
+if(statusWord === true){
+    console.log("la parola è palindroma")
+} else {
+    console.log("la parola non è palindroma")
+}
 
 
 // Creo una funzione che scomponga la parola in array: in un array ci saranno le lettere in ordine da sx, e lette da dx nell'altro array.
