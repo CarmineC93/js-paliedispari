@@ -7,7 +7,7 @@ const userWord = prompt("Dimmi una parola");
 
 isPalindroma(userWord);
 
-console.log(isWord);
+console.log(isWordPalindroma);
 
 
 // Creo una funzione che scomponga la parola in array: in un array ci saranno le lettere in ordine da sx, e lette da dx nell'altro array.
@@ -21,7 +21,7 @@ console.log(isWord);
  */
 function isPalindroma (word){
 
-    let isWord = false;
+    let isWordPalindroma = false;
 
     let fromLeft;
     for(let letterL = 0; letterL < word.length; letterL++){
@@ -42,13 +42,13 @@ function isPalindroma (word){
     let letter = 0;
     while(letter < word.length && fromRight === fromLeft){         
         if(letter === word.length-1){
-            isWord = true;
+            isWordPalindroma = true;
         };
         letter++
     }
 
 
-    return isWord;
+    return isWordPalindroma;
 
 }
 
